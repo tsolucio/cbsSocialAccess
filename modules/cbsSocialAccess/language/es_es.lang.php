@@ -9,14 +9,20 @@
  ************************************************************************************/
 
 $mod_strings = Array(
-	'ModuleName' => 'Module Name',
-	'SINGLE_ModuleName' => 'Module Name',
-	'ModuleName ID' => 'Module Name ID',
+	'cbsSocialAccess' => 'Acceso Red Social',
+	'SINGLE_cbsSocialAccess' => 'Acceso Red Social',
+	'cbsSocialAccess ID' => 'ID Acceso Red Social',
+	'socialaccessno' => 'Nº Acceso Red Social',
+	'access_date' => 'Fecha Acceso',
+	'access_time' => 'Hora Acceso',
+	'relid' => 'Relacionado con',
+	'access_url' => 'URL Acceso',
+	'srvprovidor' => 'Red',
+	'socialaction' => 'Acción',
 
+	'LBL_CBSSOCIALACCESS_INFORMATION' => 'Información Acceso Red Social',
 	'LBL_CUSTOM_INFORMATION' => 'Información Personalizada',
-	'LBL_MODULEBLOCK_INFORMATION' => 'Información ModuleName',
 	'LBL_DESCRIPTION_INFORMATION' => 'Descripción',
-
 );
 
 ?>

@@ -2,7 +2,7 @@
 <module>
 <exporttime>2014-11-26 13:30:56</exporttime>
 <name>cbsSocialAccess</name>
-<label>Social Access</label>
+<label>cbsSocialAccess</label>
 <parent>Analytics</parent>
 <dependencies>
 <vtiger_version>5.5.0</vtiger_version>
@@ -62,7 +62,7 @@
 <columnname>socialaccessno</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Social Access No.</fieldlabel>
+<fieldlabel>socialaccessno</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -86,7 +86,7 @@
 <columnname>access_date</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Access Date</fieldlabel>
+<fieldlabel>access_date</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -106,7 +106,7 @@
 <columnname>access_time</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Access Time</fieldlabel>
+<fieldlabel>access_time</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -126,7 +126,7 @@
 <columnname>relid</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Related to</fieldlabel>
+<fieldlabel>relid</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <defaultvalue></defaultvalue>
@@ -151,7 +151,7 @@
 <columnname>access_url</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Access URL</fieldlabel>
+<fieldlabel>access_url</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -171,7 +171,7 @@
 <columnname>srvprovidor</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>SRV Providor</fieldlabel>
+<fieldlabel>srvprovidor</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -198,7 +198,7 @@
 <columnname>socialaction</columnname>
 <tablename>vtiger_cbssocialaccess</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Social action</fieldlabel>
+<fieldlabel>socialaction</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>

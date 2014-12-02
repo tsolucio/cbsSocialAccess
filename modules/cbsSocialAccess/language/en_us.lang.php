@@ -10,7 +10,8 @@
 
 $mod_strings = Array(
     'cbsSocialAccess' => 'Social Access',
-    'cbsSocialAccess' => 'Social Access',
+    'SINGLE_cbsSocialAccess' => 'Social Access',
+    'cbsSocialAccess ID' => 'Social Access ID',
     'socialaccessno' => 'Social Access No.',
     'access_date' => 'Access Date',
     'access_time' => 'Access Time',

@@ -9,15 +9,20 @@
  ************************************************************************************/
 
 $mod_strings = Array(
-	'ModuleName' => 'Module Name',
-	'SINGLE_ModuleName' => 'Module Name',
-	'ModuleName ID' => 'Module Name ID',
+    'cbsSocialAccess' => 'Social Access',
+    'SINGLE_cbsSocialAccess' => 'Social Access',
+    'cbsSocialAccess ID' => 'Social Access ID',
+    'socialaccessno' => 'Social Access No.',
+    'access_date' => 'Access Date',
+    'access_time' => 'Access Time',
+    'relid' => 'Related to',
+    'access_url' => 'Access URL',
+    'srvprovidor' => 'SRV Providor',
+    'socialaction' => 'Social action',
 
-	'LBL_CUSTOM_INFORMATION' => 'Custom Information',
-	'LBL_MODULEBLOCK_INFORMATION' => 'ModuleBlock Information',
-	'LBL_DESCRIPTION_INFORMATION' => 'Description',
-
-	'ModuleFieldLabel' => 'ModuleFieldLabel Text',
+    'LBL_CUSTOM_INFORMATION' => 'Custom Information',
+    'LBL_CBSSOCIALACCESS_INFORMATION' => 'Social Access Information',
+    'LBL_DESCRIPTION_INFORMATION' => 'Description',
 );
 
 ?>

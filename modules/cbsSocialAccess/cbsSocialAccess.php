@@ -44,70 +44,70 @@ class cbsSocialAccess extends CRMEntity {
 	var $list_fields = Array (
 		/* Format: Field Label => Array(tablename, columnname) */
 		// tablename should not have prefix 'vtiger_'
-		'Socila Access No.'=> Array('cbssocialaccess', 'socialaccessno'),
-		'Access Date'=> Array('cbssocialaccess', 'access_date'),
-        'Access Time'=> Array('cbssocialaccess', 'access_time'),
-        'Related to'=> Array('cbssocialaccess', 'relid'),
-        'SRV Providor'=> Array('cbssocialaccess', 'srvprovidor'),
-        'Social action'=> Array('cbssocialaccess', 'socialaction')
+		'socialaccessno'=> Array('cbssocialaccess', 'socialaccessno'),
+		'access_date'=> Array('cbssocialaccess', 'access_date'),
+		'access_time'=> Array('cbssocialaccess', 'access_time'),
+		'relid'=> Array('cbssocialaccess', 'relid'),
+		'srvprovidor'=> Array('cbssocialaccess', 'srvprovidor'),
+		'socialaction'=> Array('cbssocialaccess', 'socialaction')
 	);
 	var $list_fields_name = Array(
 		/* Format: Field Label => fieldname */
-		'Socila Access No.'=> 'cbssocialaccessno',
-		'Access Date'=> 'access_date',
-        'Access Time'=> 'access_time',
-        'Related to'=> 'relid',
-        'SRV Providor'=> 'srvprovidor',
-        'Social action'=> 'socialaction'
+		'socialaccessno'=> 'socialaccessno',
+		'access_date'=> 'access_date',
+		'access_time'=> 'access_time',
+		'relid'=> 'relid',
+		'srvprovidor'=> 'srvprovidor',
+		'socialaction'=> 'socialaction'
 	);
 
 	// Make the field link to detail view from list view (Fieldname)
-	var $list_link_field = 'cbssocialaccessno';
+	var $list_link_field = 'socialaccessno';
 
 	// For Popup listview and UI type support
 	var $search_fields = Array(
 		/* Format: Field Label => Array(tablename, columnname) */
 		// tablename should not have prefix 'vtiger_'
-		'Socila Access No.'=> Array('cbssocialaccess', 'socialaccessno'),
-		'Access Date'=> Array('cbssocialaccess', 'access_date'),
-        'Access Time'=> Array('cbssocialaccess', 'access_time'),
-        'Related to'=> Array('cbssocialaccess', 'relid'),
-        'SRV Providor'=> Array('cbssocialaccess', 'srvprovidor'),
-        'Social action'=> Array('cbssocialaccess', 'socialaction')
+		'socialaccessno'=> Array('cbssocialaccess', 'socialaccessno'),
+		'access_date'=> Array('cbssocialaccess', 'access_date'),
+		'access_time'=> Array('cbssocialaccess', 'access_time'),
+		'relid'=> Array('cbssocialaccess', 'relid'),
+		'srvprovidor'=> Array('cbssocialaccess', 'srvprovidor'),
+		'socialaction'=> Array('cbssocialaccess', 'socialaction')
 	);
 	var $search_fields_name = Array(
 		/* Format: Field Label => fieldname */
-		'Socila Access No.'=> 'cbssocialaccessno',
-		'Access Date'=> 'access_date',
-        'Access Time'=> 'access_time',
-        'Related to'=> 'relid',
-        'SRV Providor'=> 'srvprovidor',
-        'Social action'=> 'socialaction'
+		'socialaccessno'=> 'socialaccessno',
+		'access_date'=> 'access_date',
+		'access_time'=> 'access_time',
+		'relid'=> 'relid',
+		'srvprovidor'=> 'srvprovidor',
+		'socialaction'=> 'socialaction'
 	);
 
 	// For Popup window record selection
-	var $popup_fields = Array('cbssocialaccessno');
+	var $popup_fields = Array('socialaccessno');
 
 	// Placeholder for sort fields - All the fields will be initialized for Sorting through initSortFields
 	var $sortby_fields = Array();
 
 	// For Alphabetical search
-	var $def_basicsearch_col = 'cbssocialaccessno';
+	var $def_basicsearch_col = 'socialaccessno';
 
 	// Column value to use on detail view record text display
-	var $def_detailview_recname = 'cbssocialaccessno';
+	var $def_detailview_recname = 'socialaccessno';
 
 	// Required Information for enabling Import feature
-	var $required_fields = Array('cbssocialaccessno'=>1);
+	var $required_fields = Array('socialaccessno'=>1);
 
 	// Callback function list during Importing
 	var $special_functions = Array('set_import_assigned_user');
 
-	var $default_order_by = 'cbssocialaccessno';
+	var $default_order_by = 'socialaccessno';
 	var $default_sort_order='ASC';
 	// Used when enabling/disabling the mandatory fields for the module.
 	// Refers to vtiger_field.fieldname values.
-	var $mandatory_fields = Array('createdtime', 'modifiedtime', 'cbssocialaccessno');
+	var $mandatory_fields = Array('createdtime', 'modifiedtime', 'socialaccessno');
 	
 	function __construct() {
 		global $log, $currentModule;
@@ -441,15 +441,13 @@ class cbsSocialAccess extends CRMEntity {
 	 */
 	function vtlib_handler($modulename, $event_type) {
 		if($event_type == 'module.postinstall') {
-            $modAccounts=Vtiger_Module::getInstance('Accounts');
+			$modAccounts=Vtiger_Module::getInstance('Accounts');
 			$modContacts=Vtiger_Module::getInstance('Contacts');
-            $modLeads=Vtiger_Module::getInstance('Leads');
-            $module=Vtiger_Module::getInstance('cbsSocialAccess');
-                        
-            if ($modAccounts) $modAccounts->setRelatedList($module, 'cbsSocialAccess', Array('ADD'),'get_dependents_list');
+			$modLeads=Vtiger_Module::getInstance('Leads');
+			$module=Vtiger_Module::getInstance('cbsSocialAccess');
+			if ($modAccounts) $modAccounts->setRelatedList($module, 'cbsSocialAccess', Array('ADD'),'get_dependents_list');
 			if ($modContacts) $modContacts->setRelatedList($module, 'cbsSocialAccess', Array('ADD'),'get_dependents_list');
 			if ($modLeads) $modLeads->setRelatedList($module, 'cbsSocialAccess', Array('ADD'),'get_dependents_list');
-			
 			// TODO Handle post installation actions
 			$this->setModuleSeqNumber('configure', $modulename, $modulename.'-', '0000001');
 		} else if($event_type == 'module.disabled') {
