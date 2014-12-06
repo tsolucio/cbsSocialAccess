@@ -19,6 +19,9 @@ $mod_strings = Array(
 	'access_url' => 'URL Acceso',
 	'srvprovidor' => 'Red',
 	'socialaction' => 'Acción',
+	'websiteid' => 'ID Website',
+	'extcmpid' => 'Campaña Externa',
+	'cmpid' => 'Campaña',
 
 	'LBL_CBSSOCIALACCESS_INFORMATION' => 'Información Acceso Red Social',
 	'LBL_CUSTOM_INFORMATION' => 'Información Personalizada',

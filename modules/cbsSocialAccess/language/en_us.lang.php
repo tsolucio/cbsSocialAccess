@@ -19,6 +19,9 @@ $mod_strings = Array(
     'access_url' => 'Access URL',
     'srvprovidor' => 'SRV Providor',
     'socialaction' => 'Social action',
+	'websiteid' => 'Website ID',
+	'extcmpid' => 'External Campaign',
+	'cmpid' => 'Campaign',
 
     'LBL_CUSTOM_INFORMATION' => 'Custom Information',
     'LBL_CBSSOCIALACCESS_INFORMATION' => 'Social Access Information',
